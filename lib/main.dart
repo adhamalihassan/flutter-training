@@ -23,15 +23,15 @@ void main() {
               const SizedBox(
                 height: 20.0,
               ),
-              ElevatedButton(
+              OutlinedButton.icon(
                 onPressed: () {},
-                style: TextButton.styleFrom(
+                style: OutlinedButton.styleFrom(
                   foregroundColor: const Color.fromARGB(255, 255, 255, 255),
-                  backgroundColor: Colors.purple,
                 ),
-                child: const Text(
+                label: const Text(
                   'start quiz',
                 ),
+                icon: const Icon(Icons.arrow_right_alt),
               ),
             ],
           ),
