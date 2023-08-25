@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   final void Function() startQuiz;
@@ -18,9 +19,9 @@ class StartScreen extends StatelessWidget {
           const SizedBox(
             height: 30.0,
           ),
-          const Text(
+          Text(
             'Learn Flutter the fun way!',
-            style: TextStyle(
+            style: GoogleFonts.montserrat(
               fontSize: 20.0,
               color: Colors.white,
             ),
@@ -33,8 +34,11 @@ class StartScreen extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               foregroundColor: const Color.fromARGB(255, 255, 255, 255),
             ),
-            label: const Text(
+            label: Text(
               'start quiz',
+              style: GoogleFonts.montserrat(
+                color: Colors.white,
+              ),
             ),
             icon: const Icon(Icons.arrow_right_alt),
           ),
